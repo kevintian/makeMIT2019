@@ -3,6 +3,12 @@ let currRFID = "";
 let addItems = true;
 let qrCode = null;
 
+let lookupTable = {
+  "24317065": "Shin Ramen",
+  "03412913": "Bananas",
+  "17227906": "Nutella"
+};
+
 $("body").on("keyup", function(e) {
   if (
     (event.keyCode >= 48 && event.keyCode <= 57) ||
@@ -18,7 +24,7 @@ $("body").on("keyup", function(e) {
           '<li class="list-group-item d-flex justify-content-between align-items-center" id="' +
             currRFID +
             '">' +
-            currRFID +
+            lookupTable[currRFID] +
             '<span class="badge badge-primary badge-pill">' +
             1 +
             "</span> </li>"
