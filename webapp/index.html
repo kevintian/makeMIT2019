@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping Webapp</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="qrcode.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <div class="col-6 my-auto">
+          <div class="row justify-content-center">
+            <h1 style="padding-bottom: 30px" class="text-center">
+              Welcome to Generic Supermarket!
+            </h1>
+            <h4 id="titleAddRemoveText">Currently: ADDING ITEMS</h4>
+          </div>
+          <div style="padding: .5em" class="row justify-content-center">
+            <div class="col-8 text-center">
+              <button
+                id="addRemove"
+                type="button"
+                class="btn btn-orange btn-block"
+              >
+                <strong id="addRemoveText">Remove Items from Cart</strong>
+              </button>
+            </div>
+          </div>
+          <div style="padding: .5em" class="row justify-content-center">
+            <div class="col-8 text-center">
+              <button
+                id="generate"
+                type="button"
+                class="btn btn-secondary btn-block"
+              >
+                <strong>Generate Checkout QR Code</strong>
+              </button>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="p-3" id="qrcode"></div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <br />
+          <br />
+
+          <h4 class="text-center">Current Cart Contents:</h4>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <ul id="cart" class="list-group"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
