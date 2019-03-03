@@ -8,7 +8,7 @@ let lookupTable = {
   "03412913": "Bananas",
   "17227906": "Nutella",
   "04811079": "Logitech MK270",
-  "405655": "Raspberry Pi 3 A+",
+  "04405655": "Raspberry Pi 3 A+",
   "03762407": "Arduino Uno"
 };
 
