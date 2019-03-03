@@ -6,7 +6,10 @@ let qrCode = null;
 let lookupTable = {
   "24317065": "Shin Ramen",
   "03412913": "Bananas",
-  "17227906": "Nutella"
+  "17227906": "Nutella",
+  "04811079": "Logitech MK270",
+  "405655": "Raspberry Pi 3 A+",
+  "03762407": "Arduino Uno"
 };
 
 $("body").on("keyup", function(e) {
